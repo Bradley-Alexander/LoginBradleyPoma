@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Deportivo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script>
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    }
+    function toggleSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        const toggleBtn = document.querySelector('.sidebar-toggle');
+        if (sidebar.classList.contains('hidden')) {
+            sidebar.classList.remove('hidden');
+            toggleBtn.style.left = '264px';
+        } else {
+            sidebar.classList.add('hidden');
+            toggleBtn.style.left = '24px';
+        }
+    }
+    window.onload = function() {
+        if(localStorage.getItem('darkMode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+    }
+    </script>
+</head>
+<body>
+    <button class="toggle-dark" onclick="toggleDarkMode()" title="Alternar modo claro/oscuro">
+        <i class="fas fa-moon"></i>
+    </button>
+    <button class="sidebar-toggle" onclick="toggleSidebar()" title="Mostrar/Ocultar panel">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Panel de Control</h2>
+            <ul>
+                <li><a href="#"><i class="fas fa-trophy"></i> Resultados</a></li>
+                <li><a href="#"><i class="fas fa-chart-bar"></i> Estadísticas</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Equipos</a></li>
+                <li><a href="#"><i class="fas fa-calendar-alt"></i> Calendario</a></li>
+                <li><a href="#"><i class="fas fa-newspaper"></i> Noticias</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Jugadores</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Configuración</a></li>
+            </ul>
+        </aside>
+        <main class="dashboard-main">
+            <h1>Bienvenido al Dashboard Deportivo</h1>
+            <p>Selecciona una opción del panel para ver la información correspondiente.</p>
+        </main>
+    </div>
+    <style>
+    .toggle-dark {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        background: #102542;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        cursor: pointer;
+        z-index: 10;
+        transition: background 0.2s;
+    }
+    .toggle-dark:hover {
+        background: #0a1a2f;
+    }
+    .sidebar-toggle {
+        position: fixed;
+        top: 24px;
+        left: 264px;
+        background: #102542;
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        cursor: pointer;
+        z-index: 11;
+        transition: left 0.3s, background 0.2s;
+    }
+    .sidebar.hidden + .dashboard-main ~ .sidebar-toggle {
+        left: 24px;
+    }
+    .sidebar.hidden ~ .sidebar-toggle {
+        left: 24px;
+    }
+    .sidebar-toggle:hover, .sidebar-toggle.active {
+        background: #0a1a2f;
+    }
+    .sidebar {
+        transition: margin-left 0.3s;
+    }
+    .sidebar.hidden {
+        display: none;
+    }
+    .sidebar ul li {
+        border-bottom: 1px solid #23304a;
+        margin-bottom: 24px;
+        padding-bottom: 16px;
+    }
+    .sidebar ul li:last-child {
+        border-bottom: none;
+    }
+    .sidebar ul {
+        margin-top: 32px;
+    }
+    @media (max-width: 700px) {
+        .sidebar-toggle {
+            left: 24px !important;
+        }
+        .sidebar {
+            width: 180px;
+        }
+    }
+    </style>
+</body>
+</html>
