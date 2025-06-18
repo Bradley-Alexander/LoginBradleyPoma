@@ -12,6 +12,38 @@ Para generar estas vista se siguió el siguiente proceso:
 
 5: Aunque aún hay cosas por pulir, esta es una primera idea para poder generar un login definitivo, tocaría mejorar los colores, la posición de algunos elementos y otros detalles.
 
+## Estructura del Proyecto
+
+El proyecto está compuesto por los siguientes archivos principales:
+
+- `login.html`: Página de inicio de sesión.
+- `registro.html`: Página de registro de usuarios.
+- `dashboard.html`: Panel principal tras iniciar sesión.
+- `menu.html`: Menú de navegación o página de opciones.
+- `fontawesome.html`: Archivo de recursos para iconos (FontAwesome).
+- `styles.css`: Hoja de estilos principal para todo el proyecto.
+
+Cada archivo HTML representa una vista o funcionalidad específica del sistema, mientras que la hoja de estilos unifica la apariencia visual.
+
+## Desarrollo utilizando el modo agente
+
+El desarrollo de este proyecto se realizó con la asistencia de GitHub Copilot en modo agente, lo que permitió:
+
+- Generar y modificar archivos de manera automatizada.
+- Mantener una estructura clara y modular.
+- Agilizar la implementación de funcionalidades y estilos.
+- Recibir sugerencias y buenas prácticas en tiempo real.
+
+## Cómo ejecutar el proyecto
+
+1. Descarga o clona el repositorio en tu equipo.
+2. Abre la carpeta del proyecto en tu editor de preferencia (por ejemplo, VS Code).
+3. Abre cualquiera de los archivos HTML (`login.html`, `registro.html`, etc.) en tu navegador para visualizar la interfaz.
+
+No se requiere instalación de dependencias externas ni configuración adicional, ya que el proyecto está basado únicamente en HTML y CSS.
+
+Imagenes:
+
 Login:
 ![image](https://github.com/user-attachments/assets/75c3bf1e-b51f-4689-9c57-6ed79f19b331)
 
