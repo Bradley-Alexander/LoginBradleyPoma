@@ -19,7 +19,10 @@ Register:
 ![image](https://github.com/user-attachments/assets/90f2d685-ed77-4017-8c89-70bbdc819b38)
 
 Dashboard:
-![image](https://github.com/user-attachments/assets/75520830-4e3e-4e73-82ec-c51923e3fb58)
+![image](https://github.com/user-attachments/assets/7b3c4253-fb8a-49f7-b5f8-53a04db45720)
+
+Menu:
+![image](https://github.com/user-attachments/assets/f0dd93f8-f08e-47af-8e78-c18a96e89803)
 
 
 
