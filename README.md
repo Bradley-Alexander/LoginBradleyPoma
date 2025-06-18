@@ -11,3 +11,15 @@ Para generar estas vista se siguió el siguiente proceso:
 4: Una vez ya con los archivos generados se procedio a probarlos ya en navegador dando como resultado las páginas requeridas.
 
 5: Aunque aún hay cosas por pulir, esta es una primera idea para poder generar un login definitivo, tocaría mejorar los colores, la posición de algunos elementos y otros detalles.
+
+Login:
+![image](https://github.com/user-attachments/assets/75c3bf1e-b51f-4689-9c57-6ed79f19b331)
+
+Register:
+![image](https://github.com/user-attachments/assets/90f2d685-ed77-4017-8c89-70bbdc819b38)
+
+Dashboard:
+![image](https://github.com/user-attachments/assets/75520830-4e3e-4e73-82ec-c51923e3fb58)
+
+
+
